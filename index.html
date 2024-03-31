@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator assignment using JS</title>
+  <!-- custom CSS   -->
+  <link rel="stylesheet" href="./Styles/style.css" />
+</head>
+
+<body>
+  <header>
+  </header>
+
+  <main>
+    <div class="container">
+      <input id="display" type="text" placeholder="0" />
+      <div>
+        <button class="ac btn " onclick="cleardisplay()">C</button>
+        <button class="del btn " onclick="deleteValue()">DEL</button>
+        <button class="operator btn " onclick="calculatePercentage()">%</button>
+        <button class="operator btn " onclick="handeleGetValue('/')">/</button>
+      </div>
+
+      <div>
+        <button class=" btn value-btn " onclick="handeleGetValue('7')">7</button>
+        <button class=" btn value-btn " onclick="handeleGetValue('8')">8</button>
+        <button class=" btn value-btn " onclick="handeleGetValue('9')">9</button>
+        <button class="operator btn " onclick="handeleGetValue('*')">*</button>
+      </div>
+
+      <div>
+        <button class=" btn value-btn " onclick="handeleGetValue('4')">4</button>
+        <button class=" btn value-btn " onclick="handeleGetValue('5')">5</button>
+        <button class=" btn value-btn " onclick="handeleGetValue('6')">6</button>
+        <button class="operator btn " onclick="handeleGetValue('-')">-</button>
+      </div>
+
+      <div>
+        <button class=" btn value-btn " onclick="handeleGetValue('1')">1</button>
+        <button class=" btn value-btn " onclick="handeleGetValue('2')">2</button>
+        <button class=" btn value-btn " onclick="handeleGetValue('3')">3</button>
+        <button class="operator btn " onclick="handeleGetValue('+')">+</button>
+      </div>
+
+      <div>
+        <button class=" btn value-btn " onclick="handeleGetValue('00')">00</button>
+        <button class=" btn value-btn " onclick="handeleGetValue('0')">0</button>
+        <button class=" btn value-btn " onclick="handeleGetValue('.')">.</button>
+        <button class="equal btn" onclick="handelcalculate()">=</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+  </footer>
+</body>
+<!-- custom script -->
+  <script src="./Script/Script.js"></script>
+
+</html>
